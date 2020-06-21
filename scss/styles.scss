@@ -1,0 +1,80 @@
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "layout";
+@import "product";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+//util
+.bg-cover{
+  background-size: cover;
+  background-position: center center;
+}
+
+
+// 主要內容
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.banner{
+  padding: 128px 0 24px 0;
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+    padding: 128px 0;
+  }
+  &__txt{
+    a{
+      width: 100%;
+      padding: 18px 0;
+      @media (min-width: 768px) {
+        width: auto;
+        padding: 18px 45px;
+      }
+    }
+    &__title{
+      color: #ffffff;
+      @media (min-width: 768px) {
+        color: #000000;
+      }
+    }
+  }
+  &__bg{
+    top: -56px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    @media (min-width: 768px) {
+      left: 50%;
+    }
+  }
+}
+.artDir{
+  height: 400px;
+  &__contact{
+    a{
+      color: $primary;
+    }
+  }
+}
+.product{
+  .card__img{
+    height: 0;
+    width: 100%;
+    padding-bottom: 100%;
+  }
+  @media (max-width: 767px) {
+    .card-title{
+      font-size: 20px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+}

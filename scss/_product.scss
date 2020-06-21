@@ -1,0 +1,57 @@
+.Categories{
+  background-color: #F2F2F2;
+  .nav-link{
+    padding: 1rem 0;
+    color: $secondary;
+    
+    &:hover{
+      color: $primary;
+    }
+    @media (min-width:768px){
+      padding: 1.5rem 0;
+      font-size: 1.5rem;
+    }
+  }
+}
+.productSale{
+  .card__img__100p{
+    height: 0;
+    width: 100%;
+    padding-bottom: 100%;
+  }
+  .card__img__69p{
+    height: 0;
+    width: 100%;
+    padding-bottom: 69%;
+  }
+  .card__img__137p{
+    height: 0;
+    width: 100%;
+    padding-bottom: 137%;
+  }
+  @media only screen and (max-width: 767px) {
+    .card-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .card__img {
+      padding-bottom: 100%;
+    }
+    .card{
+      max-width: 49%;
+      width: 100%;
+      h4{
+        font-size: 20px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+  &__page{
+    a{
+      font-size: 1.5rem;
+    }
+  }
+}
